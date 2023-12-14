@@ -19,7 +19,7 @@ export class ProductPageComponent {
     ],
   });
 
-  changeColor() {
+  public changeColor(): void {
     this.color = '#xxxxxx'.replace(/x/g, (y) =>
       ((Math.random() * 16) | 0).toString(16)
     );
